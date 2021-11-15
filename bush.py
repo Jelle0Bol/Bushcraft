@@ -4,8 +4,8 @@ materialen = float(3.45 * 7.5) + (3 * 1.24 * 5) + (2.67 * 2) + (2 * 3.26) + (0.2
 geschikt = "Je bent wel geschikt om mee te gaan!"
 helaas = "Je bent helaas niet geschikt om mee te gaan"
 
-#print("Je moet " , (round(benzine,2))," voor benzine betalen")
-#print("De materialen kosten" , (round(materialen,2)) , "euro")
+print("Je moet " , (round(benzine,2))," voor benzine betalen")
+print("De materialen kosten" , (round(materialen,2)) , "euro")
 
 print("Welkom bij BushCamp, waar ik een aantal vragen")
 print("ga stellen om te kijken of jij wel geschikt hiervoor bent")
@@ -76,5 +76,19 @@ print("Vervolgens : ")
 harrie()
 print("Ten slotte : ")
 bieb()
+print("")
+print("Ten slotte heb ik hier nog een vraag  die cruciaal is voor het avontuur")
+print("")
+
+werk = int(input("Hoeveel euro ben je bereid om in het avontuur te stoppen? : "))
+def werken():
+    if werk >= 45:
+        print("Gefeliciteerd, als je voor een van de 4 taken geschikt ben dan kan je mee! Bedankt voor het beantwoorden van de vragen! Tot ziens")
+    elif werk < 45:
+        print("Sorry, dat is te weinig. Helaas kan je niet mee")
+    else:
+        print("Typ alsjeblieft een getal in")
+        werken()
+werken()
 
 
