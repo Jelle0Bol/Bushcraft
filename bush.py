@@ -1,3 +1,5 @@
-diesel = float(input("Hoeveel kost de dieselprijs?"))
+diesel = float(input("Hoeveel kost de dieselprijs? : "))
 benzine = (244 / 12) * (diesel) * (2) + (80)
-print(round(benzine,2))
+materialen = float(3.45 * 7.5) + (3 * 1.24 * 5) + (2.67 * 2) + (2 * 3.26) + (0.21 * 5) + (2.23 * 4) + (0.59 * 10)
+print("Je moet " , (round(benzine,2))," voor benzine betalen")
+print("De materialen kosten" , (round(materialen,2)) , "euro")
